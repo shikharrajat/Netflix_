@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,63 +12,65 @@
 </head>
 
 <body>
-    <div class="topbar">
-        <div class="topbar-left">
+    <header class="topbar">
+        <div class="topbar-left" aria-label="Logo and Title">
             <i class="logo fas fa-igloo"></i>
             <h1>Igloo</h1>
         </div>
-        <div class="topbar-center">
+        <div class="topbar-center" aria-label="Main Search Bar">
             <div class="topbar-search">
-                <i class="search-icon fas fa-search"></i>
-                <input type="text" placeholder="Search...">
+                <i class="search-icon fas fa-search" aria-hidden="true"></i>
+                <input type="search" placeholder="Search..." aria-label="Search input">
             </div>
         </div>
-        <div class="topbar-right">
-            <div class="line-container">
+        <div class="topbar-right" aria-label="Menu Icon">
+            <button class="line-container" aria-label="Toggle Menu">
                 <div class="line line-1"></div>
                 <div class="line line-2"></div>
                 <div class="line line-3"></div>
-            </div>
+            </button>
         </div>
-    </div>
-    <div class="menu">
-        <div class="menu-top">
+    </header>
+
+    <nav class="menu">
+        <div class="menu-top" aria-label="Menu Search">
             <div class="menu-search">
-                <i class="search-icon fas fa-search"></i>
-                <input type="text" placeholder="Search">
+                <i class="search-icon fas fa-search" aria-hidden="true"></i>
+                <input type="search" placeholder="Search" aria-label="Menu Search">
             </div>
         </div>
-        <div class="menu-center">
+        <div class="menu-center" aria-label="Navigation Links">
             <div class="menu-item">
-                <i class="fas fa-home"></i>
+                <i class="fas fa-home" aria-hidden="true"></i>
                 <span>Home</span>
             </div>
             <div class="menu-item">
-                <i class="fas fa-paper-plane"></i>
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
                 <span>Pages</span>
             </div>
             <div class="menu-item">
-                <i class="fas fa-user-friends"></i>
+                <i class="fas fa-user-friends" aria-hidden="true"></i>
                 <span>Groups</span>
             </div>
             <div class="menu-item">
-                <i class="fas fa-users"></i>
+                <i class="fas fa-users" aria-hidden="true"></i>
                 <span>People</span>
             </div>
             <div class="menu-item">
-                <i class="fas fa-bullhorn"></i>
+                <i class="fas fa-bullhorn" aria-hidden="true"></i>
                 <span>Updates</span>
             </div>
         </div>
-        <div class="menu-bottom">
-            <div class="menu-bottom-user">
+        <footer class="menu-bottom">
+            <div class="menu-bottom-user" aria-label="User Profile">
                 <img src="https://images.pexels.com/photos/5944321/pexels-photo-5944321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                    alt="">
-                <span>John Doe</span>
+                    alt="Profile Picture of Shikhar Sharma" onerror="this.src='default-profile.jpg';">
+                <span>Shikhar Sharma</span>
             </div>
-            <i class="far fa-question-circle"></i>
-        </div>
-    </div>
+            <i class="far fa-question-circle" aria-label="Help"></i>
+        </footer>
+    </nav>
+
     <script src="app.js"></script>
 </body>
 </html>
